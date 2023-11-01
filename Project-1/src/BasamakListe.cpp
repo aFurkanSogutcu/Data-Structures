@@ -1,37 +1,35 @@
-#include "BagliListee.hpp"
-#include "main.cpp"
+#include "BasamakListe.hpp"
+//#include "main.cpp"
 
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
-
-SayilarListesi::SayilarListesi(){
-    ilk = 0;
+Sayi::Sayi(){
+    ilkB = 0;
 };
 
-void SayilarListesi::sayiEkle(int bDeger){
+
+void Sayi::basEkle(int bDeger){
     Basamak *yeni = new Basamak(bDeger);
-    if(ilk == 0){
-        ilk = yeni;
+    if(ilkB == 0){
+        ilkB = yeni;
         return;
     }
     else {
-        Basamak* gec = ilk;
+        Basamak* gec = ilkB;
 
         while(gec -> sonraki != 0) {
             gec = gec -> sonraki;
         }
-
-        
         gec -> sonraki = yeni;
     }
 };
 
-void SayilarListesi::yazdir(){
+void Sayi::yazdir(){
 
     //cout << setw(10) << "adres" << setw(10) << "veri" << setw(10) << "sonraki" << endl;
-    Basamak* gec = ilk;
+    Basamak* gec = ilkB;
 
     while (gec != 0)
     {
