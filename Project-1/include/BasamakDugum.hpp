@@ -3,8 +3,8 @@
 
 class Basamak {
     public:
-        Basamak(int bDeger);
-        int bDeger;
+        Basamak(int basamakDeger);
+        int basamakDeger;
         Basamak* sonraki;
 };  
 

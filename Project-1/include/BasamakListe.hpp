@@ -7,9 +7,10 @@ class Sayi{
     public:
         Sayi();
         //~Sayi();
-        void basEkle(int bDeger);
-        void yazdir();
+        void basEkle(int basamakDeger);
+        void yazdir(int sayac);
         Basamak* ilkB;
+        int butunSayiBirlestir(Basamak* deger);
 };
 
 #endif

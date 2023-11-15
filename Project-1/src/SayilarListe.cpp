@@ -25,22 +25,16 @@ void SayilarListesi::sayiEkle(Sayi* sayiListesi){
     }
 };
 
-// void SayilarListesi::yazdir(){
+void SayilarListesi::yazdir(){
 
-//     //cout << setw(10) << "adres" << setw(10) << "veri" << setw(10) << "sonraki" << endl;
-//     Dugum* gec = ilk;
+    //cout << setw(10) << "adres" << setw(10) << "veri" << setw(10) << "sonraki" << endl;
+    Dugum* gec = ilk;
 
-//     while (gec != 0)
-//     {
-//         cout << "##########" << endl;
-//         cout << "#" << gec << "#" << endl;
-//         cout << "#--------#" << endl;
-//         cout << "#" << gec->bDeger << "#" << endl;
-//         cout << "##########" << endl;
-//         cout << endl;
-//         gec = gec -> sonraki; 
-//     }
+    while (gec != 0){ 
+        cout << "#" << gec << "#" << endl;
+        gec = gec -> sonraki;
+    }
     
-//     cout<<endl;
+    cout<<endl;
 
-// };
+};

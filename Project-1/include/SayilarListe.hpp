@@ -11,6 +11,7 @@ class SayilarListesi{
         //~SayilarListesi();
         void sayiEkle(Sayi* sayiListesi);   
         void yazdir();
+        void SayiListesiSil(Sayi* silinecek);
         Dugum* ilk;
 };
 

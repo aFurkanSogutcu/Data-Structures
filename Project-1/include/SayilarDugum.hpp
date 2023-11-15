@@ -6,8 +6,8 @@
 class Dugum {
     public:
         Dugum* sonraki;
-        Sayi* sayiListesi;
-        Dugum(Sayi* sayiListesi);
+        Sayi* basListesi;
+        Dugum(Sayi* basListesi);
         //~Dugum();
         //int sayiP;
 };
